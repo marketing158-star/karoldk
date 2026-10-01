@@ -1,161 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade With Purab™
 
-<title>Trading Community</title>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+ - Official Educational Channel</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#080d19',
+                        cardDark: '#0a1221',
+                        borderCyan: '#12394a',
+                        cyanGlow: '#00e5ff',
+                        tealText: '#20e3b2',
+                        btnBlue: '#00a0f6',
+                        btnBlueHover: '#008be0'
+                    },
+                    boxShadow: {
+                        'profile-glow': '0 0 25px 2px rgba(0, 229, 255, 0.45)',
+                        'card-glow': '0 0 40px -10px rgba(0, 0, 0, 0.8)',
+                        'btn-glow': '0 8px 25px -5px rgba(0, 160, 246, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
 
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
+    <!-- Font Awesome Icons & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
+    <!-- ========================================== -->
+    <!-- META PIXEL & TRACKING CODE -->
+    <!-- ========================================== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Facebook Pixel ID Initialization
+      fbq('init', '2151031248784239'); 
+      
+      // Standard PageView Event
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=2151031248784239&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========================================== -->
 
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #060a14;
+            background-image: radial-gradient(circle at 50% 40%, #0d1a30 0%, #060a14 70%);
+            min-height: 100vh;
+        }
 
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
+        .custom-card-border {
+            border: 1px solid rgba(22, 60, 82, 0.7);
+        }
 
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
+        .active-press {
+            transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+        }
 
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
-
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
-
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
-
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+        .active-press:active {
+            transform: scale(0.97);
+        }
+    </style>
 </head>
 
-<body>
+<body class="text-slate-100 flex flex-col justify-center items-center p-4 sm:p-6 min-h-screen select-none">
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
-</div>
+    <!-- Main Card Container -->
+    <main class="w-full max-w-[390px] bg-[#0a1120] custom-card-border rounded-[32px] p-6 sm:p-8 flex flex-col items-center text-center shadow-card-glow relative z-10">
+        
+        <!-- Circular Profile Image with Glowing Halo -->
+        <div class="relative my-2">
+            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-[3px] bg-gradient-to-b from-[#00e5ff] to-[#0077ff] shadow-profile-glow flex items-center justify-center">
+                <div class="w-full h-full rounded-full overflow-hidden bg-slate-900">
+                    <img src="profile.png" 
+                         alt="Trade With Purab™
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+ 
+" 
+                         class="w-full h-full object-cover object-top"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/0c192c/20e3b2?text=';">
+                </div>
+            </div>
+        </div>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Main Title with Chart Emoji -->
+        <div class="mt-4 mb-6 flex items-center justify-center gap-2">
+            <h1 class="text-2xl sm:text-[27px] font-extrabold text-[#1ae5b6] tracking-tight">
+                Trade With Purab™
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+            </h1>
+            <span class="inline-flex items-center justify-center bg-white rounded-md p-1 w-6 h-6 shadow-sm">
+                <i class="fa-solid fa-chart-line-up text-red-500 text-xs">📈</i>
+            </span>
+        </div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+        <!-- Feature Points List -->
+        <div class="w-full space-y-4 mb-8 text-left px-1">
+            
+            <!-- Feature 1 -->
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 flex items-center justify-center text-red-500 text-lg shrink-0">
+                    🎯
+                </div>
+                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
+                    Daily Nifty & BankNifty Setup
+                </span>
+            </div>
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+            <!-- Feature 2 -->
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 flex items-center justify-center text-emerald-400 text-lg shrink-0">
+                    📊
+                </div>
+                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
+                    High Accuracy Options Trading
+                </span>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 flex items-center justify-center text-blue-400 text-lg shrink-0">
+                    🛡
+                </div>
+                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
+                    Proper Risk Management
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Telegram CTA Button -->
+        <div class="w-full">
+            <button id="telegramLink" 
+                    onclick="trackButtonClick()" 
+                    class="w-full py-3.5 px-5 bg-btnBlue hover:bg-btnBlueHover active-press rounded-full text-white font-extrabold text-base tracking-wide flex items-center justify-between shadow-btn-glow transition-all duration-200 cursor-pointer">
+                
+                <i class="fa-paper-plane fa-solid text-white text-lg ml-1"></i>
+                <span class="text-center w-full">Join Premium Free</span>
+                <i class="fa-paper-plane fa-solid text-white text-lg mr-1"></i>
+                
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer Below Card -->
+    <footer class="w-full max-w-[390px] text-center mt-6 space-y-1.5 text-xs text-slate-400/80 px-2">
+        <p class="leading-relaxed text-[11px] font-normal">
+            Trading involves risk. This channel is for educational purposes only.
+        </p>
+        <p class="text-[11px] font-normal">
+            Ads Managed by 
+            <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank" rel="noopener" class="text-btnBlue font-bold hover:underline">
+                Elite marketing Agency
+            </a>
+        </p>
+
+        <!-- Legal Modal Triggers -->
+        <div class="flex justify-center items-center space-x-2 text-[10px] text-slate-500 pt-3">
+            <button onclick="toggleModal('privacyModal')" class="hover:text-slate-300 transition-colors">Privacy Policy</button>
+            <span>•</span>
+            <button onclick="toggleModal('termsModal')" class="hover:text-slate-300 transition-colors">Terms of Service</button>
+            <span>•</span>
+            <button onclick="toggleModal('disclaimerModal')" class="hover:text-slate-300 transition-colors">Disclaimer</button>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                <h3 class="font-bold text-sm text-cyan-400">Privacy Policy</h3>
+                <button onclick="toggleModal('privacyModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="leading-relaxed text-slate-400">We respect your privacy. Standard pixel conversion tags are implemented purely for advertisement performance optimization.</p>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                <h3 class="font-bold text-sm text-cyan-400">Terms of Service</h3>
+                <button onclick="toggleModal('termsModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="leading-relaxed text-slate-400">All information posted on our educational channels is meant solely for informational and learning purposes.</p>
+        </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div id="disclaimerModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                <h3 class="font-bold text-sm text-cyan-400">Disclaimer</h3>
+                <button onclick="toggleModal('disclaimerModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <p class="leading-relaxed text-slate-400">We are not SEBI registered. Trading carries financial risk. Always consult a certified professional before making market investments.</p>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT: ANTI-DUPLICATE TRACKING LOGIC -->
+    <!-- ========================================== -->
+    <script>
+        var telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl";
+
+        function trackButtonClick() {
+            var btn = document.getElementById('telegramLink');
+
+            // 1. Check: Kya user iss session me pehle click kar chuka hai?
+            if (sessionStorage.getItem('telegram_clicked') === 'true') {
+                // Duplicate / Multiple clicks par Meta Pixel FIRE NAHI HOGA
+                window.location.href = telegramUrl;
+                return;
+            }
+
+            // 2. Pehle click ko Browser Memory (sessionStorage) me lock kar rahe hain
+            sessionStorage.setItem('telegram_clicked', 'true');
+
+            // 3. SIRF 'Subscribe' Event Fire hoga (Strictly 1 baar)
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe'); 
+            }
+
+            // 4. Button ko instantly disable kar do (Repeated clicks completely block)
+            if (btn) {
+                btn.style.pointerEvents = 'none';
+                btn.style.opacity = '0.7';
+                btn.innerHTML = '<span class="text-center w-full flex items-center justify-center gap-2"><i class="fa-solid fa-circle-notch animate-spin text-lg"></i> Connecting...</span>';
+            }
+
+            // 5. 300ms ke baad Telegram par redirection (Taaki Pixel Event safely receive ho sake)
+            setTimeout(function() {
+                window.location.href = telegramUrl;
+            }, 300);
+        }
+
+        // Modal Toggle Helper
+        function toggleModal(modalId) {
+            var modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        // Back button se aane par button ko wapas clickable banana (Bina Subscribe count badhaye)
+        window.addEventListener('pageshow', function() {
+            var btn = document.getElementById('telegramLink');
+            if (btn && sessionStorage.getItem('telegram_clicked') === 'true') {
+                btn.style.pointerEvents = 'auto';
+                btn.style.opacity = '1';
+                btn.innerHTML = '<i class="fa-paper-plane fa-solid text-white text-lg ml-1"></i><span class="text-center w-full">Join Premium Free</span><i class="fa-paper-plane fa-solid text-white text-lg mr-1"></i>';
+            }
+        });
+    </script>
 
 </body>
 </html>
