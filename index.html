@@ -1,284 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade With Purab™
-
-
- - Official Educational Channel</title>
+    <title>Gautam trader ™</title>
     
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Meta Pixel Base Code (Syntax Corrected) -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        bgDark: '#080d19',
-                        cardDark: '#0a1221',
-                        borderCyan: '#12394a',
-                        cyanGlow: '#00e5ff',
-                        tealText: '#20e3b2',
-                        btnBlue: '#00a0f6',
-                        btnBlueHover: '#008be0'
-                    },
-                    boxShadow: {
-                        'profile-glow': '0 0 25px 2px rgba(0, 229, 255, 0.45)',
-                        'card-glow': '0 0 40px -10px rgba(0, 0, 0, 0.8)',
-                        'btn-glow': '0 8px 25px -5px rgba(0, 160, 246, 0.4)'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Font Awesome Icons & Google Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- ========================================== -->
-    <!-- META PIXEL & TRACKING CODE -->
-    <!-- ========================================== -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      
-      // Facebook Pixel ID Initialization
-      fbq('init', '4723181774628377'); 
-      
-      // Standard PageView Event
-      fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1806035330755205'); 
+    fbq('track', 'PageView');
     </script>
     <noscript>
       <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=4723181774628377&ev=PageView&noscript=1"/>
+           src="https://www.facebook.com/tr?id=1806035330755205&ev=PageView&noscript=1"/>
     </noscript>
-    <!-- ========================================== -->
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #060a14;
-            background-image: radial-gradient(circle at 50% 40%, #0d1a30 0%, #060a14 70%);
+            background-color: #0b0f12;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
-
-        .custom-card-border {
-            border: 1px solid rgba(22, 60, 82, 0.7);
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: #12181f;
+            border: 1px solid #1e2836;
+            border-radius: 20px;
+            padding: 40px 24px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
-
-        .active-press {
-            transition: transform 0.15s ease, background-color 0.15s ease, opacity 0.15s ease;
+        .profile-img-box {
+            width: 105px;
+            height: 105px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(180deg, #ffd700, #ff9900);
+            box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
         }
-
-        .active-press:active {
-            transform: scale(0.97);
+        .profile-img-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        h1 {
+            color: #eab308;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .sub-title {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .tags {
+            color: #94a3b8;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background-color: #0ea5e9;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            margin-bottom: 25px;
+        }
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
+        .features-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        .features-list li {
+            color: #cbd5e1;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .disclaimer {
+            color: #64748b;
+            font-size: 11px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+        .managed-tag {
+            border: 1px solid #1e2836;
+            border-radius: 10px;
+            padding: 10px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+        .managed-tag span {
+            color: #38bdf8;
+            font-weight: 600;
         }
     </style>
 </head>
+<body>
 
-<body class="text-slate-100 flex flex-col justify-center items-center p-4 sm:p-6 min-h-screen select-none">
+    <div class="container">
+        <div class="profile-img-box">
+            <img src="profile.png" alt="TRADING WITH KAROL 📈 ( SEBI REGISTERED)
+">
+        </div>
 
-    <!-- Main Card Container -->
-    <main class="w-full max-w-[390px] bg-[#0a1120] custom-card-border rounded-[32px] p-6 sm:p-8 flex flex-col items-center text-center shadow-card-glow relative z-10">
+        <h1>TRADING WITH KAROl
+</h1>
         
-        <!-- Circular Profile Image with Glowing Halo -->
-        <div class="relative my-2">
-            <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-full p-[3px] bg-gradient-to-b from-[#00e5ff] to-[#0077ff] shadow-profile-glow flex items-center justify-center">
-                <div class="w-full h-full rounded-full overflow-hidden bg-slate-900">
-                    <img src="profile.png" 
-                         alt="Trade With Purab™
+        <div class="sub-title">Daily Market Updates</div>
+        <div class="tags">NIFTY · BANKNIFTY · STOCK OPTIONS</div>
 
- 
-" 
-                         class="w-full h-full object-cover object-top"
-                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/0c192c/20e3b2?text=';">
-                </div>
-            </div>
-        </div>
+        <button class="cta-btn" onclick="redirectToTelegram()">
+            Join Free Telegram Channel
+        </button>
 
-        <!-- Main Title with Chart Emoji -->
-        <div class="mt-4 mb-6 flex items-center justify-center gap-2">
-            <h1 class="text-2xl sm:text-[27px] font-extrabold text-[#1ae5b6] tracking-tight">
-                TRADE  WITH GAUTAM (OFFICIAL)
+        <ul class="features-list">
+            <li>✓ Daily Market Updates</li>
+            <li>✓ F&O Views for Educational Purposes</li>
+            <li>✓ Market Learning & Analysis</li>
+        </ul>
 
-
-
-
-            </h1>
-            <span class="inline-flex items-center justify-center bg-white rounded-md p-1 w-6 h-6 shadow-sm">
-                <i class="fa-solid fa-chart-line-up text-red-500 text-xs">📈</i>
-            </span>
-        </div>
-
-        <!-- Feature Points List -->
-        <div class="w-full space-y-4 mb-8 text-left px-1">
-            
-            <!-- Feature 1 -->
-            <div class="flex items-center gap-3">
-                <div class="w-7 h-7 flex items-center justify-center text-red-500 text-lg shrink-0">
-                    🎯
-                </div>
-                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
-                    Daily Nifty & BankNifty Setup
-                </span>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="flex items-center gap-3">
-                <div class="w-7 h-7 flex items-center justify-center text-emerald-400 text-lg shrink-0">
-                    📊
-                </div>
-                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
-                    High Accuracy Options Trading
-                </span>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="flex items-center gap-3">
-                <div class="w-7 h-7 flex items-center justify-center text-blue-400 text-lg shrink-0">
-                    🛡
-                </div>
-                <span class="text-slate-100 font-semibold text-sm sm:text-[15px]">
-                    Proper Risk Management
-                </span>
-            </div>
-
-        </div>
-
-        <!-- Telegram CTA Button -->
-        <div class="w-full">
-            <button id="telegramLink" 
-                    onclick="trackButtonClick()" 
-                    class="w-full py-3.5 px-5 bg-btnBlue hover:bg-btnBlueHover active-press rounded-full text-white font-extrabold text-base tracking-wide flex items-center justify-between shadow-btn-glow transition-all duration-200 cursor-pointer">
-                
-                <i class="fa-paper-plane fa-solid text-white text-lg ml-1"></i>
-                <span class="text-center w-full">Join Premium Free</span>
-                <i class="fa-paper-plane fa-solid text-white text-lg mr-1"></i>
-                
-            </button>
-        </div>
-
-    </main>
-
-    <!-- Footer Below Card -->
-    <footer class="w-full max-w-[390px] text-center mt-6 space-y-1.5 text-xs text-slate-400/80 px-2">
-        <p class="leading-relaxed text-[11px] font-normal">
-            Trading involves risk. This channel is for educational purposes only.
-        </p>
-        <p class="text-[11px] font-normal">
-            Ads Managed by 
-            <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank" rel="noopener" class="text-btnBlue font-bold hover:underline">
-                Elite marketing Agency
-            </a>
+        <p class="disclaimer">
+            Market investments are subject to market risks. Please consider your objectives and risk tolerance before making any investment decision.
         </p>
 
-        <!-- Legal Modal Triggers -->
-        <div class="flex justify-center items-center space-x-2 text-[10px] text-slate-500 pt-3">
-            <button onclick="toggleModal('privacyModal')" class="hover:text-slate-300 transition-colors">Privacy Policy</button>
-            <span>•</span>
-            <button onclick="toggleModal('termsModal')" class="hover:text-slate-300 transition-colors">Terms of Service</button>
-            <span>•</span>
-            <button onclick="toggleModal('disclaimerModal')" class="hover:text-slate-300 transition-colors">Disclaimer</button>
-        </div>
-    </footer>
-
-    <!-- Privacy Modal -->
-    <div id="privacyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                <h3 class="font-bold text-sm text-cyan-400">Privacy Policy</h3>
-                <button onclick="toggleModal('privacyModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <p class="leading-relaxed text-slate-400">We respect your privacy. Standard pixel conversion tags are implemented purely for advertisement performance optimization.</p>
+        <div class="managed-tag">
+            Managed by <span>elite marketing</span>
         </div>
     </div>
 
-    <!-- Terms Modal -->
-    <div id="termsModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                <h3 class="font-bold text-sm text-cyan-400">Terms of Service</h3>
-                <button onclick="toggleModal('termsModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <p class="leading-relaxed text-slate-400">All information posted on our educational channels is meant solely for informational and learning purposes.</p>
-        </div>
-    </div>
-
-    <!-- Disclaimer Modal -->
-    <div id="disclaimerModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-[#0e1726] border border-slate-800 rounded-2xl max-w-xs w-full p-5 text-left text-xs text-slate-300 space-y-3 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                <h3 class="font-bold text-sm text-cyan-400">Disclaimer</h3>
-                <button onclick="toggleModal('disclaimerModal')" class="text-slate-400 hover:text-white text-base"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <p class="leading-relaxed text-slate-400">We are not SEBI registered. Trading carries financial risk. Always consult a certified professional before making market investments.</p>
-        </div>
-    </div>
-
-    <!-- ========================================== -->
-    <!-- JAVASCRIPT: ANTI-DUPLICATE TRACKING LOGIC -->
-    <!-- ========================================== -->
     <script>
-        var telegramUrl = "https://t.me/+1iGxhOQef8RhYjY1";
+        var hasTracked = false;
+        var telegramLink = "https://t.me/+CLO7Xbj1XJJmNmE1";
 
-        function trackButtonClick() {
-            var btn = document.getElementById('telegramLink');
-
-            // 1. Check: Kya user iss session me pehle click kar chuka hai?
-            if (sessionStorage.getItem('telegram_clicked') === 'true') {
-                // Duplicate / Multiple clicks par Meta Pixel FIRE NAHI HOGA
-                window.location.href = telegramUrl;
-                return;
+        function redirectToTelegram() {
+            // 1. Fire 'Subscribe' Event Only Once per user click
+            if (!hasTracked && typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
+                hasTracked = true; // Duplicate trigger rokne ke liye
             }
 
-            // 2. Pehle click ko Browser Memory (sessionStorage) me lock kar rahe hain
-            sessionStorage.setItem('telegram_clicked', 'true');
-
-            // 3. SIRF 'Subscribe' Event Fire hoga (Strictly 1 baar)
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Subscribe'); 
-            }
-
-            // 4. Button ko instantly disable kar do (Repeated clicks completely block)
-            if (btn) {
-                btn.style.pointerEvents = 'none';
-                btn.style.opacity = '0.7';
-                btn.innerHTML = '<span class="text-center w-full flex items-center justify-center gap-2"><i class="fa-solid fa-circle-notch animate-spin text-lg"></i> Connecting...</span>';
-            }
-
-            // 5. 300ms ke baad Telegram par redirection (Taaki Pixel Event safely receive ho sake)
+            // 2. 300ms Delay to guarantee event delivery before navigation
             setTimeout(function() {
-                window.location.href = telegramUrl;
+                window.location.href = telegramLink;
             }, 300);
         }
-
-        // Modal Toggle Helper
-        function toggleModal(modalId) {
-            var modal = document.getElementById(modalId);
-            if (modal) {
-                modal.classList.toggle('hidden');
-            }
-        }
-
-        // Back button se aane par button ko wapas clickable banana (Bina Subscribe count badhaye)
-        window.addEventListener('pageshow', function() {
-            var btn = document.getElementById('telegramLink');
-            if (btn && sessionStorage.getItem('telegram_clicked') === 'true') {
-                btn.style.pointerEvents = 'auto';
-                btn.style.opacity = '1';
-                btn.innerHTML = '<i class="fa-paper-plane fa-solid text-white text-lg ml-1"></i><span class="text-center w-full">Join Premium Free</span><i class="fa-paper-plane fa-solid text-white text-lg mr-1"></i>';
-            }
-        });
     </script>
 
 </body>
